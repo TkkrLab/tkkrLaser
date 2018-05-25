@@ -2,11 +2,86 @@
 
 ## Index
 1. [Intro](#intro)
-2. [Replacement parts](#rParts)
+2. [Maintenance](#maintenance)
+   1. [Lens cleaning](#cLens)
+   2. [Mirror cleaning](#cMirror)
+   3. [Mirror calibration](#calibration)
+   4. [Lubrication](#lube)
+   5. [cut perimeter](#perimeter)
+3. [Replacement parts](#rParts)
    1. [Laser mirror](#mirror)
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
+
+## <a name="maintenance"></a>Maintenance
+### <a name="cLens"></a>Lens cleaning
+To get access to the mirror, first remove the beam expander from the laserhead, this is the piece at the bottom of the laserhead. To release it remove the screws at either side.
+After the beam expander is removed, unscrew the lens holder. This is the part where the beam expander was clamped onto. 
+
+Carefully tip out the lens on some microfibre cloth or something that will not scratch up the surface of the lens, these things do scratch easily!
+
+<a name="cleanLens"></a>First blow of any dust that has settled on the lens with a blowout bulb or something else gentle. After this is done any stuff that remeans on the lens, use some cotton swabs or balls with some acetone to clean of the remainder. If the acetone streaks, you probably moved too fast with the cotton ball or swab.
+Also clean by moving in concentric circles.
+To remove grease or fingerprints you can use distilled white vinegar or of course some other mild acidic substance. Don't clean it for more then 30 secconds. Ohterwise it could start to effect the surface. Becaise it doesn't evaporate quickly, clean directly afterwards with some acetone.
+Sometimes you hear for things like this some coke beverage should be used, but that is definately not recommended. It is true that coke is acidic, but has alot more additives as well. I blame the internet for this misconception of coke being a miracle cleaning product.
+
+To remount the lens, drop the lens carefully in the lens holder. Make sure that the flat or hollow side of the lens is facing up.
+Screw back the lensholder to the laserhead.
+Reattach the beam expander to the lens holder, and screw back in the screws taken out earlier, just hand tight. Don't overtighten them, otherwise the thread will be stripped out easily.
+
+### <a name="cMirror"></a>Mirror cleaning
+In spite of some beliefs that optics never should be cleaned on a laser cutter, but this is necessary for sure. ([1](https://www.troteclaser.com/en/knowledge/tips-for-laser-users/cleaning-lenses/), [2](https://k40laser.se/lens-mirrors/cleaning-your-mirrors-and-lens/), [3](http://support.epiloglaser.com/article/8205/11940/Cleaning-Your-Optics))
+There are three mirrors in total in the laser cutter, one of them in the top of the laserhead. The mirror in the laserhead is the only one that can not be cleaned without removing it completely, but this mirror doesn't have to be cleaned that often since the angle it is in.
+Most times you can clean the mirrors within the mirror mounts without removing them, if there isn't too much filth buildup on top of them.
+To clean the mirror, dab or spray a cotton swab or ball with some acetone and gently roll it over the surface of the mirror. Do not force or rub it, because the mirror is easily scratched. After this inspect if there is any residue left on the mirror. If you clean the mirror while still being installed, don't use any distilled white vinegar or anything else acidic on them, since it gets trapped within the mirror mount.
+
+In the case there is still residue left on the mirror and it isn't possible to clean them properly or if there is some grease you have to remove them to be able to clean them better.
+To release the mirror from it's mount, turn the retention ring anticlockwise while holding the mirror manifold to make sure not to twist the stand in half popping the springs out. Although it is possible to put the springs back in place, it is a pain in the neck to do so.
+To remove the mirror from the laserhead simply unscrew the retention clip, with a philips screw driver and carefully lift out the mirror.
+
+After the mirror has been removed, you can clean them the same way as the [lens](#cleanLens).
+
+To reinstall the mirror, place the mirror back into the manifold of the mirror stand and carefully screw on the retention ring hand tight clockwise. Make sure not to bump out the mirror whole doing so.
+To reseat the mirror in the laserhead, drop it back into place carefully and reattach the retention clip with the philips crewdriver.
+
+### <a name="calibration"></a>Mirror calibration
+within the laser cutter there are 3 mirrors, reflecting the laser beam from the lasertube in the back towards the laser head down to the cutting surface.
+Mirror #1 is located directly in front of the laser tube, mirror #2 is located on the left on the x beam gliding along with the y movement.
+Mirror #3 is located within the top of the laserhead and is the only one that is not adjustable.
+
+C02 laser tubes produce infrared light, that means it is not vissible to the naked eye and cant really be used to align the mirrors without a different aid.
+Within the more expensive lasercutters there is a visible low power laser source available. This visible laser beam is then injected with a beam combiner.
+But since the beam combiners are for some unexplained reason rather expensive we have to calibrate the lasercutter without this nice visible aid.
+
+To calibrate a lasercutter without a visible laser source, often people use masking tape or thin paper to stick on mirror #2 and on the entrance of the laserhead.
+This might seem like a good idea, because it is easy and fast to set up. Also some deviation from the center introduced is fine, as long as the diviation is the same at all 4 corners of the cutting area and is no more out of the center by about 2mm. If the deviation is too great the laserbeam will bounce within the laserhead creating a ghosting effect on the material that is being cut. The deviation must be the same in all 4 corners. The reason for this is, it will influence the cutting power of the lasercutter.
+What a better solution would be is to use thin piece plywood or cardboard with double sided tape.
+There are some [ready made templates](images/laser-callibration.svg) to cut the pieces of ply or cardboard. Make sure that for mirror mounts the material isn't too thick since they are at a 45 degree angle, the deviation introduced is the thickness of the material that is used as an aid on the mirror.
+Also carefully remove the alignment aids carefully, since the mirror mounts are spring loaded. The mirror mounts have three screws on the back of them, to adjust the alignment of the mirror.
+
+To short fire the tube, unplug the laser power supply control connector. This way the test button becomes usuable to short fire the tube, however this can also be done with some G-code.
+
+The first thing that has to be aligned has to be the tube itself, this only has to be done only once after the tube is replaced.
+When mounting the tube, there are some pieces of rubber to cushion the tube within the pipe clamps, these can be fenagled around a bit.
+Softly press the round piece of carboard or ply on the mirror mount #1 and turn on the tube for a short time and adjust the tube alignment until it hits the center of the mirror.
+Don't forget to carefully remove the alignment aid from the mirror mount.
+
+Aligning mirror #1: Softly press the round piece of carboard or ply on the mirror mount #2 and turn on the tube for a short time and adjust the alignment of mirror #1 until it hits the center of mirror #2.
+Don't forget to carefully remove the alignment aid from the mirror mount.
+
+Aligning mirror #2: Softly press the rectangle piece of cardboard or ply on the laserhead. Make sure the the target is over the hole in the leaserhead.
+Place the rectangle piece directly against the flat surfaces of the laserhead, this way the target is centered. Turn on the tube for a short time and adjustthe alignment of mirror #2 until it hits the target on the right spot. Make sure that the alignment is the same in the 4 corners of the cutting area. If the alignment drifts too much. It can be that the first two mirrors are slightly out of alignment.
+Don't forget to remove the alignment aid from the laserhead.
+
+### <a name="lube"></a>Lubrication
+To reduce wear and tear on the moving parts, it is important to keep the x and y rods lubricated.
+There are two Y beams and one X beam, over the X beam the lasercutter cariage movers left and right. The y beams are on either side of the cutting bed.
+Use some sewing machine oil to grease them while making sure not to get grease on the mirrors. Also don't overdo it either, otherwise it could drip on working peaces while cutting.
+
+### <a name="perimeter"></a>Cut perimeter
+To mark the exact cutting area, you can tape of the sides and use the [cut-perimeter.gcode](cut-perimeter.gcode) to cut out the exact dimesnions of the erea.
+Maybe in the feature we could install some steal rulers, but at this time it hasn't been missed yet.
 
 ## <a name="rParts"></a>Replacement parts
 ### <a name="mirror"></a>Laser mirror (reflective round thing)
