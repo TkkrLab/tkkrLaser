@@ -5,7 +5,7 @@
 2. [Replacement parts](#rparts)
    1. [Laser mirror](#mirror)
    2. [Laser lens](#lens)
-
+   3. [Laser tube](#tube)
 
 ## <a name="rparts"></a>Replacement parts
 ### <a name="mirror"></a>Laser mirror (reflective round thing)
@@ -18,7 +18,7 @@ Gold coated K9(BK7) crystal glass (borosilicate crown glass). They are far from 
 Refractive index: n = 17.768
 
 Si
-Gold coated silicon glass, these mirror have a good reflective index. These mirror should be replaced about once a year and are usable for up to 60 watts laser systems.
+Gold coated silicon glass, these mirrors have a good reflective index. They should be replaced about once a year and are usable for up to 60 watts laser systems.
 Refractive index: n = 17.768
 
 Mo
@@ -26,7 +26,7 @@ Mirror made out of molybdenum, it does not have the best reflective index, but t
 Refractive index: n = 13.478
 
 Cu
-gold coated copper mirror, these mirror have a good reflective index but stronger than Si. They don't have to be replaced often. Ideal for higher power laser cutters 50 watts and up
+gold coated copper mirror, these mirrors have a good reflective index but stronger than Si. They don't have to be replaced often. Ideal for higher power laser cutters 50 watts and up
 Refractive index: n = 17.768
 
 
@@ -38,3 +38,20 @@ The most common focal lengths are 38.1mm 50.8mm 63.5mm 76.2mm and 101.6mm
 The longer the focal length is the narrower the beam is, meaning that you can cut trough thicker material.
 The shorter focal length has the benefit to be much better with engraving and cutting trough thin materials, while the longer focal length is better for cutting thick materials.
 For a more all round machine the 50.8mm is recommended.
+
+
+### <a name="tube"></a>Laser tube
+The TkkrLab laser cutter has a 50 watt sealed CO2 laser tube installed with an expected life of 3000 to 4500 hours of operation.
+Within the laser tube because it is a sealed version is a complex mixture of different gasses. The lifetime of the tube is also really depended on the mixture used.
+It is possible to produce a higher wattage output then the tube is rated for, simply by allowing more current to flow trough. But this really shortens the lifespan of the part because the gasses inside the tube decompose much faster.
+Because this is possible some laser tube vendors have the habit of overselling the wattage because of this, be warned.
+The diameter does not have much effect on the laser strength, length does.
+
+The length of a 50 watt tube is 1000mm.
+Operational current is 22ma.
+Ignition voltage is 24KV and operation voltage is 16KV.
+It is fine if the voltage is higher as long as the current isn't exceeded.
+The tube can be over driven to 60 watts but that is not recommended.
+
+Propper cooling is also very important for the co2 laser tube,
+overheating will decompose the gasses inside pretty fast.
