@@ -1,13 +1,14 @@
 # TkkrLab laser cutter
 
 ## Index
-1. [Intro](#Intro)
-2. [Replacement parts](#rparts)
+1. [Intro](#intro)
+2. [Replacement parts](#rParts)
    1. [Laser mirror](#mirror)
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
-## <a name="rparts"></a>Replacement parts
+
+## <a name="rParts"></a>Replacement parts
 ### <a name="mirror"></a>Laser mirror (reflective round thing)
 The TkkrLab laser cutter will take mirrors with a diameter of 25mm and a thickness of 3mm.
 Base materials can either be Si Mo or Cu, the differences are described below. Currently installed are Si type mirrors.
@@ -53,5 +54,4 @@ Ignition voltage is 24KV and operation voltage is 16KV.
 It is fine if the voltage is higher as long as the current isn't exceeded.
 The tube can be over driven to 60 watts but that is not recommended.
 
-Propper cooling is also very important for the co2 laser tube,
-overheating will decompose the gasses inside pretty fast.
+Propper cooling is also very important for the co2 laser tube, overheating will decompose the gasses inside pretty fast.
