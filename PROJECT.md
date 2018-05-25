@@ -2,17 +2,73 @@
 
 ## Index
 1. [Intro](#intro)
-2. [Maintenance](#maintenance)
+2. [Laser cutting](#laserCutting)
+   1. [Basic technical information](#basicTech)
+   2. [Program interface options](#interface)
+   3. [Visicut to send a job](#visicut)
+   4. [Inkscape to prepare a job](#inkscape)
+3. [Maintenance](#maintenance)
    1. [Lens cleaning](#cLens)
    2. [Mirror cleaning](#cMirror)
    3. [Mirror calibration](#calibration)
    4. [Lubrication](#lube)
    5. [cut perimeter](#perimeter)
-3. [Replacement parts](#rParts)
+4. [Replacement parts](#rParts)
    1. [Laser mirror](#mirror)
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
+## <a name="laserCutting"></a>
+### <a name="basicTech"></a>
+To turn on the lasercutter, make sure that the red power button in the back is turned on and the emergency stop is pulled up.
+Before starting a lasercutter job make sure that the water cooling is running and the tiny compressor is blowing are trough the laserhead.
+
+The TkkrLab lasercutter has a smoothieboard installed because the original DSP was not very usuable, but only worked well with engraving.
+
+The working area on the laserbed is 400x300 mm
+
+The lasertube that currently is installed can do a initial burst of 60 watts (also operating the tube higher then 50 watt it will greatly reduce the lifetime of the tube), dropping of fast to 50 watt.
+This is normal behaviour, because it is technically a 50 watt tube.
+
+To raise and lower the cutting bed, use the turn wheel on the right side of the lasercutter. clockwise to raise it counterclockwise to lower it.
+
+The current firmware on the smoothieboard clone, is the stock frimware with the following configuration: [config](smoothie-board-config.txt).
+
+### <a name="interface"></a>
+There are many programs and ways to interface with the TkkrLab laser cutter, in all instances it boils down to it uses [G-code](https://en.wikipedia.org/wiki/G-code).
+
+The first way is to connect lasercutter software directly to the lasercutter, but this is the slowest way of communication. This can be done via a telnet like connection.
+One of the biggest drawback of this is that, if a command string is send to the lasercutter it executes the command. After it successfully did it's movement it sends back an ack to say to the software it has been done successfully. After wich the software sends an other line of G-code. The end result of this is that the lasercutter runs slower over all and the movement is a lot more jerky because of the starting and stopping of movement all the time.
+
+The other way is to upload a G-code file directly to the lasercutter either directly via the program to the url in our case: http://lasercutter.tkkrlab.space/upload or upload a G-code file via http://lasercutter.tkkrlab.space
+
+The lasercutter uses [standard G-Code](http://smoothieware.org/supported-g-codes) of course ignore the 3d printer specific ones.
+Although the TkkrLab laser cutter is based on a smoothieboard clone, that istelf is derivative of the [grbl project](https://github.com/grbl/grbl/wiki)
+Meaning that the documentation regarding the working is the same. The main benifit of the smoothieboard that the cpu is faster and has almost all the supporting hardware already on the board.
+
+### <a name="visicut"></a>Visicut to send a job
+The easiest way to prepare and send a job to the tkkrlab lasercutter is [visicut](https://hci.rwth-aachen.de/visicut), of course other programs are possible as well.
+
+The first time after you installed [visicut](https://hci.rwth-aachen.de/visicut), it prompts you to choose wich default settings should be loaded.
+Simply choose "Netherlands, Enschede: TkkrLab" this loads the recommended default settings for the lasercutter.
+If you want to reset and get the recommended prompt again, simply choose "download recommended settings" from the "options" menu
+Also it is recommended to read the [visicut manual](https://github.com/t-oster/VisiCut/wiki/VisiCut-manual) for operation as well
+
+### <a name="inkscape"></a>Inkscape to prepare a job
+To prepare a job, inkscape can be used to create an svg vector image. Of course any other program that can generate svg files can be used as well. But they all have their own bugs and quirks though.
+If you use inkscape, visicut has the option to install the visicut plugin. This makes it easier to import jobs from inkscape into visicut.
+This plugin will show up under "lasercut path" within the extensions menu in inkscape.
+the two options are: "add to visicut" and "open in visicut".
+Add to visicut adds the vector drawing to visicut, keeping any old jobs on the plate as well.
+Open in visicut disgards the old job and starts a new one on an empty plate.
+Note if you have a selection within inkscape, that is send instead of the whole drawing.
+
+To install the plugin, start visicut and choose "install inkscape plugin" under the "extras" menu.
+
+If you want to engrave an image you can simply load an image into your drawing that isn't a vector, this gets picked up by visicut to rasterize and create g-code for it.
+Also it doesn't have to be black and white. (although it would be prefered to better guestimate the outcome of the job.
+
+For otherr opterations you can use different line colors to engrave and cut, the default is cut for red and mark for blue. These colors can be changed under the advanced mapping within visicut. a black line or fill color is used for engraving as well.
 
 ## <a name="maintenance"></a>Maintenance
 ### <a name="cLens"></a>Lens cleaning
