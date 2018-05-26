@@ -19,8 +19,23 @@
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
+## <a name="intro"></a>
+At some point TkkrLab invested in a lasercutter to make more projects possible, the choice fell on a CW3040 lasercutter.
+Although CW stands for [Cowin](http://www.cowinlaser.com/) the exact same model can be found made by other manufacturers as well, the only difference is the two letters in the beginning of the type.
 
+The lasercutter came with a Lihuiyu Studio [6C6879-LASER-M2:6](https://tkkrlab.nl/w/images/6/62/6C6879-LASER-M2-6_Chinese.pdf) DSP from [3wcad](http://www.3wcad.com/)
+and was only compatible with coreldraw, it was usuable for rectangle shapes and engraving bitmaps. At had the most interesting issues with round shapes if they were not connected. So that wasn't too usuable. So we opted for a [smoothie clone board](https://tkkrlab.nl/wiki/MKS_SBASE_Smoothie) and replaced the DSP with that.
 
+After some time running with the [smoothie clone board](https://tkkrlab.nl/wiki/MKS_SBASE_Smoothie) clone, the lasertube gave out and took the powersupply with it.
+We replaced the lasertube for a "60 watt" 50 watt tube and a new power supply. To connect the new power supply, a opto board was created. But the tube didn't get the full current it needed yet.
+![opto board schematic](images/opt-lasercutter.png)
+[opto board schematic](opt-lasercutter.sch)
+Although after some tweaking the power supply that was fixed as well.
+
+Also to accomodate for the larget length tube, we added an extension cover to the right side of the laser cutter as well.
+
+Because so much about the lasercutter has changed, I would call it the TK3040 or just the TkkrLab lasercutter.
+   
 ## <a name="laserCutting"></a>
 ### <a name="basicTech"></a>
 To turn on the lasercutter, make sure that the red power button in the back is turned on and the emergency stop is pulled up.
