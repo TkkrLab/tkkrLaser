@@ -1,4 +1,5 @@
 # TkkrLab laser cutter
+![tkkrLab lasercutter](images/tkkrLasser.jpg)
 
 ## Index
 1. [Intro](#intro)
@@ -18,6 +19,8 @@
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
+
+
 ## <a name="laserCutting"></a>
 ### <a name="basicTech"></a>
 To turn on the lasercutter, make sure that the red power button in the back is turned on and the emergency stop is pulled up.
@@ -25,7 +28,7 @@ Before starting a lasercutter job make sure that the water cooling is running an
 
 The TkkrLab lasercutter has a smoothieboard installed because the original DSP was not very usuable, but only worked well with engraving.
 
-The working area on the laserbed is 400x300 mm
+The working area on the laserbed is 400x300 mm, the cutting depth has a maximum of 15mm of material although in practice 6mm is more doable.
 
 The lasertube that currently is installed can do a initial burst of 60 watts (also operating the tube higher then 50 watt it will greatly reduce the lifetime of the tube), dropping of fast to 50 watt.
 This is normal behaviour, because it is technically a 50 watt tube.
