@@ -182,7 +182,7 @@ Refractive index: n = 17.768
 
 ### <a name="lens"></a>Laser lens (the thing that focuses the beam, this is not reflective)
 The TkkrLab laser cutter will take a lens with a diameter of 12mm and a thickness between 2 and 3mm. The material has to be ZnSe since normal glass and other materials will not allow infrared to pass trough.
-We currently have a focal length (fl) of 38.1mm however recommended is 50.8mm
+We currently have a focal length (fl) of 50.8mm, this is also recommended for an allround machine.
 
 The most common focal lengths are 38.1mm 50.8mm 63.5mm 76.2mm and 101.6mm 
 The longer the focal length is the narrower the beam is, meaning that you can cut trough thicker material.
