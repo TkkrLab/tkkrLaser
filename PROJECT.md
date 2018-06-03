@@ -1,3 +1,9 @@
+---
+title: "TkkrLab lasercutter: Troubles and revelations with a lasercutter"
+date: 2018-05-25
+thumbnail: "images/tkkrLasser.jpg"
+---
+
 # TkkrLab laser cutter
 ![tkkrLab lasercutter](images/tkkrLasser.jpg)
 
