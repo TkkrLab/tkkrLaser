@@ -19,7 +19,7 @@
    2. [Laser lens](#lens)
    3. [Laser tube](#tube)
 
-## <a name="intro"></a>
+## <a name="intro"></a>Intro
 At some point TkkrLab invested in a lasercutter to make more projects possible, the choice fell on a CW3040 lasercutter.
 Although CW stands for [Cowin](http://www.cowinlaser.com/) the exact same model can be found made by other manufacturers as well, the only difference is the two letters in the beginning of the type.
 
@@ -36,8 +36,8 @@ Also to accomodate for the larget length tube, we added an extension cover to th
 
 Because so much about the lasercutter has changed, I would call it the TK3040 or just the TkkrLab lasercutter.
    
-## <a name="laserCutting"></a>
-### <a name="basicTech"></a>
+## <a name="laserCutting"></a>Laser cutting
+### <a name="basicTech"></a>Basic technical information
 To turn on the lasercutter, make sure that the red power button in the back is turned on and the emergency stop is pulled up.
 Before starting a lasercutter job make sure that the water cooling is running and the tiny compressor is blowing are trough the laserhead.
 
@@ -53,7 +53,7 @@ To raise and lower the cutting bed, use the turn wheel on the right side of the 
 
 The current firmware on the smoothieboard clone, is the stock frimware with the following configuration: [config](smoothie-board-config.txt).
 
-### <a name="interface"></a>
+### <a name="interface"></a>Program interface options
 There are many programs and ways to interface with the TkkrLab laser cutter, in all instances it boils down to it uses [G-code](https://en.wikipedia.org/wiki/G-code).
 
 The first way is to connect lasercutter software directly to the lasercutter, but this is the slowest way of communication. This can be done via a telnet like connection.
