@@ -34,6 +34,7 @@ and was only compatible with coreldraw, it was usuable for rectangle shapes and 
 
 After some time running with the [smoothie clone board](https://tkkrlab.nl/wiki/MKS_SBASE_Smoothie) clone, the lasertube gave out and took the powersupply with it.
 We replaced the lasertube for a "60 watt" 50 watt tube and a new power supply. To connect the new power supply, a opto board was created. But the tube didn't get the full current it needed yet.
+
 [![opto board schematic](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/images/opt-lasercutter.png)](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/schematics/opt-lasercutter.sch)
 
 Although after some tweaking the power supply that was fixed as well.
