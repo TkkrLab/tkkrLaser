@@ -1,11 +1,11 @@
 ---
 title: "TkkrLab lasercutter: Troubles and revelations with a lasercutter"
 date: 2018-05-25
-thumbnail: "images/tkkrLasser.jpg"
+thumbnail: "https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/images/tkkrLasser.jpg"
 ---
 
 # TkkrLab laser cutter
-![tkkrLab lasercutter](images/tkkrLasser.jpg)
+![tkkrLab lasercutter](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/images/tkkrLasser.jpg)
 
 ## Index
 1. [Intro](#intro)
@@ -34,8 +34,8 @@ and was only compatible with coreldraw, it was usuable for rectangle shapes and 
 
 After some time running with the [smoothie clone board](https://tkkrlab.nl/wiki/MKS_SBASE_Smoothie) clone, the lasertube gave out and took the powersupply with it.
 We replaced the lasertube for a "60 watt" 50 watt tube and a new power supply. To connect the new power supply, a opto board was created. But the tube didn't get the full current it needed yet.
-![opto board schematic](images/opt-lasercutter.png)
-[opto board schematic](schematics/opt-lasercutter.sch)
+![opto board schematic](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/images/opt-lasercutter.png)
+[opto board schematic](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/schematics/opt-lasercutter.sch)
 Although after some tweaking the power supply that was fixed as well.
 
 Also to accomodate for the larget length tube, we added an extension cover to the right side of the laser cutter as well.
@@ -57,7 +57,7 @@ This is normal behaviour, because it is technically a 50 watt tube.
 
 To raise and lower the cutting bed, use the turn wheel on the right side of the lasercutter. clockwise to raise it counterclockwise to lower it.
 
-The current firmware on the smoothieboard clone, is the stock frimware with the following configuration: [config](smoothie-board-config.txt).
+The current firmware on the smoothieboard clone, is the stock frimware with the following configuration: [config](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/smoothie-board-config.txt).
 
 ### <a name="interface"></a>Program interface options
 There are many programs and ways to interface with the TkkrLab laser cutter, in all instances it boils down to it uses [G-code](https://en.wikipedia.org/wiki/G-code).
@@ -138,7 +138,7 @@ But since the beam combiners are for some unexplained reason rather expensive we
 To calibrate a lasercutter without a visible laser source, often people use masking tape or thin paper to stick on mirror #2 and on the entrance of the laserhead.
 This might seem like a good idea, because it is easy and fast to set up. Also some deviation from the center introduced is fine, as long as the diviation is the same at all 4 corners of the cutting area and is no more out of the center by about 2mm. If the deviation is too great the laserbeam will bounce within the laserhead creating a ghosting effect on the material that is being cut. The deviation must be the same in all 4 corners. The reason for this is, it will influence the cutting power of the lasercutter.
 What a better solution would be is to use thin piece plywood or cardboard with double sided tape.
-There are some [ready made templates](images/laser-callibration.svg) to cut the pieces of ply or cardboard. Make sure that for mirror mounts the material isn't too thick since they are at a 45 degree angle, the deviation introduced is the thickness of the material that is used as an aid on the mirror.
+There are some [ready made templates](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/images/laser-callibration.svg) to cut the pieces of ply or cardboard. Make sure that for mirror mounts the material isn't too thick since they are at a 45 degree angle, the deviation introduced is the thickness of the material that is used as an aid on the mirror.
 Also carefully remove the alignment aids carefully, since the mirror mounts are spring loaded. The mirror mounts have three screws on the back of them, to adjust the alignment of the mirror.
 
 To short fire the tube, unplug the laser power supply control connector. This way the test button becomes usuable to short fire the tube, however this can also be done with some G-code.
@@ -161,7 +161,7 @@ There are two Y beams and one X beam, over the X beam the lasercutter cariage mo
 Use some sewing machine oil to grease them while making sure not to get grease on the mirrors. Also don't overdo it either, otherwise it could drip on working peaces while cutting.
 
 ### <a name="perimeter"></a>Cut perimeter
-To mark the exact cutting area, you can tape of the sides and use the [cut-perimeter.gcode](cut-perimeter.gcode) to cut out the exact dimesnions of the erea.
+To mark the exact cutting area, you can tape of the sides and use the [cut-perimeter.gcode](https://raw.githubusercontent.com/TkkrLab/tkkrLaser/master/cut-perimeter.gcode) to cut out the exact dimesnions of the erea.
 Maybe in the feature we could install some steal rulers, but at this time it hasn't been missed yet.
 
 ## <a name="rParts"></a>Replacement parts
