@@ -167,7 +167,7 @@ Maybe in the feature we could install some steal rulers, but at this time it has
 
 ## <a name="rParts"></a>Replacement parts
 ### <a name="mirror"></a>Laser mirror (reflective round thing)
-The TkkrLab laser cutter will take mirrors with a diameter of 25mm and a thickness of 3mm.
+The TkkrLab laser cutter will take mirrors with a diameter of 20mm and a thickness of 3mm. (This stated 25mm before, which is wrong.)
 Base materials can either be Si Mo or Cu, the differences are described below. Currently installed are Si type mirrors.
 The current mirror set that is installed into the laser cutter is Si, however more recommended with novice use would Mo since they are more scratch and heat resistant.
 
